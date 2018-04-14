@@ -15,5 +15,9 @@ module ApplicationHelper
       content_tag(:p, greeting, class: "source-greeting")
     end
   end
+
+  def copyright_generator
+    JonesViewTool::Renderer.copyright 'Kristen Jones', 'All rights reserved'
+  end
 end
 
