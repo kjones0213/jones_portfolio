@@ -14,22 +14,22 @@
   </head>
 
   <body>
+    <main role="main" class="container">
+      <%= render 'shared/blog_nav'%>
+      <%= render 'shared/blog_masthead'%>
+      <div class="container">
 
-    <%= render 'shared/blog_nav'%>
-    <%= render 'shared/blog_masthead'%>
+         <div class="row">
 
-     <div class="container">
+           <%= yield %>
 
-       <div class="row">
+           <%= render 'shared/blog_sidebar' %>
+         </div>
 
-         <%= yield %>
+         <%= render 'shared/blog_footer'%>
 
-         <%= render 'shared/blog_sidebar' %>
-       </div>
-
-       <%= render 'shared/blog_footer'%>
-
-       <%= source_helper("blog")%>
-     </div>
+         <%= source_helper("blog")%>
+      </div>
+    </main>
   </body>
 </html>
