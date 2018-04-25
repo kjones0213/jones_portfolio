@@ -80,7 +80,7 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 65em) {
   .masthead-brand {
     float: left;
   }
@@ -155,3 +155,17 @@ body {
 .app-footer {
   color: white;
 }
+
+.tech-news {
+  color: black;
+  margin: 20px;
+}
+
+.tech-news a {
+  color: green;
+}
+
+.tech-news > .card {
+  padding: 30px;
+}
+
