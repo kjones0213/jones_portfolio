@@ -3,5 +3,7 @@ class Topic < ApplicationRecord
 
   has_many :blogs
 
-  # belongs_to :topic (removed in lesson 112)
+  def self.with_blogs
+    includes(:blogs).where.not(blogs: { id: nil })
+  end
 end
